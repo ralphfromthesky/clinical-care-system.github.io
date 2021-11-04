@@ -1,0 +1,61 @@
+algorithm
+
+start from clinic, 
+
+1.is the patient new or have record history,
+2.if no check history, 
+3.if yes proceed to patient registration then wait for physician.
+4.then assesment and treatment, 
+5. is patient need to admit? if yes go to admission,
+6.if patient need to stay in ER then so stay, 
+7.if patient need house observation then proceed to medical prescription
+8.then proced to payment
+9. END....
+
+
+
+PSEUDO
+
+begin
+display "first time"
+input "yes ,no"
+
+if no then
+display "patient record history"
+input "data history"
+
+proceed "wait for physician"
+input "assesment / treatment"
+
+if "yes"
+display "fill up forn /  patient reg form"
+input "data"
+
+
+display "waiting for physician"
+process "waiting"
+
+display "assessment / treatment"
+decision "stay in er, observe in house, admit"
+
+if "stay in er:
+proceed "er"
+
+if "admit"
+proceed "admission"
+
+if "observe in house"
+proceed "medical prescription"
+
+proceed "billing payment"
+input "numeric"
+label "payment"
+
+end
+
+
+
+
+
+
+
